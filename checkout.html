@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout - Tech Products Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Tech Products</a>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h2 class="text-center display-4 mb-5">Checkout</h2>
+        <div class="row">
+            <div class="col-md-5 order-md-2 mb-4">
+                <h4 class="mb-3">Order Summary</h4>
+                <ul id="order-summary" class="list-group mb-3">
+                </ul>
+                <div class="cart-total text-end">
+                </div>
+            </div>
+            <div class="col-md-7 order-md-1">
+                <h4 class="mb-3">Shipping Details</h4>
+                <form id="checkout-form">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Name" required>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Lastname" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="mail@example.com" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Shipping Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="Robakidze str.4" required>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="checkout.js"></script>
+</body>
+
+</html>
